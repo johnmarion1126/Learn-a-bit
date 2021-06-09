@@ -45,7 +45,7 @@ button {
   display: flex;
   flex-direction: column;
   text-align: center;
-  border: 1px solid #5ef4d6;
+  border: 2px solid #5ef4d6;
   border-radius: 10px;
   background-color: rgb(34, 23, 39, 0.8);
   margin: auto;

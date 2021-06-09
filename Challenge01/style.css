@@ -44,11 +44,11 @@ button {
 
 /*Header Text Styling*/
 .header-text {
-  border: 1px solid #5ef4d6;
+  border: 2px solid #5ef4d6;
   border-radius: 10px;
   background-color: rgb(34, 23, 39, 0.8);
-  margin: 160px 0px 0px 120px;
-  width: 520px;
+  margin: 160px 0px 0px 150px;
+  width: 525px;
   padding: 20px 40px;
   color: white;
 }
@@ -62,5 +62,5 @@ button {
 .header-text button {
   font-size: 1.1em;
   margin: 10px 0px;
-  padding: 15px 30px;
+  padding: 10px 20px;
 }
