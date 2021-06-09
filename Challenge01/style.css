@@ -24,10 +24,18 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 15px 120px;
-  color: white;
   background-color: #221727;
+}
+
+nav .nav-items {
+  color: white;
   font-family: "Viga";
   font-weight: 100;
+}
+
+nav .nav-items a {
+  color: white;
+  text-decoration: none;
 }
 
 button {
@@ -63,4 +71,19 @@ button {
   font-size: 1.1em;
   margin: 10px 0px;
   padding: 10px 20px;
+}
+
+@media screen and (max-width: 700px) {
+  nav .nav-items {
+    display: none;
+  }
+
+  /*Header Text Styling*/
+  .header-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+    margin-top: 160px;
+  }
 }
