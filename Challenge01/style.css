@@ -1,0 +1,66 @@
+/*Reset browser for styling*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/*General Styling*/
+html {
+  font-family: "Rubik", sans-serif;
+  line-height: 1.6;
+  background-image: url("./images/mintbean-dome.png");
+  background-size: 1400px;
+}
+
+/*Nav Styling*/
+nav {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 120px;
+  color: white;
+  background-color: #221727;
+  font-family: "Viga";
+  font-weight: 100;
+}
+
+button {
+  padding: 10px 20px;
+  font-family: "Rubik";
+  font-weight: 100;
+  font-size: 1em;
+  font-weight: bold;
+  background-color: #5ef4d6;
+  border-style: none;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+
+/*Header Text Styling*/
+.header-text {
+  border: 1px solid #5ef4d6;
+  border-radius: 10px;
+  background-color: rgb(34, 23, 39, 0.8);
+  margin: 160px 0px 0px 120px;
+  width: 520px;
+  padding: 20px 40px;
+  color: white;
+}
+
+.header-text h1 {
+  font-size: 1.32em;
+  font-family: "Viga";
+  padding: 10px;
+}
+
+.header-text button {
+  font-size: 1.1em;
+  margin: 10px 0px;
+  padding: 15px 30px;
+}
