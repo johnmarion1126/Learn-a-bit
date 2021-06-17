@@ -48,7 +48,6 @@ html {
 .about .about__img-container {
   display: flex;
   justify-content: center;
-  overflow: hidden;
 }
 
 .about .about__img-container__img {
