@@ -46,7 +46,7 @@ html {
 }
 
 .about .about__img {
-  width: 356px;
+  min-width: 300px;
   height: 200px;
   background-image: url("./../images/mintbean-dome.png");
   background-position: center;
@@ -76,7 +76,7 @@ html {
 }
 
 /*Web Page Styling*/
-@media (min-width: 400px) {
+@media (min-width: 1000px) {
   /*Main Header Styling*/
   .main-about-header {
     margin: 20px;
