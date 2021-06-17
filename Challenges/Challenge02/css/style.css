@@ -36,8 +36,8 @@ html {
 
 /*About Styling*/
 .about {
-  padding: 20px 20px;
   margin: 10px 20px;
+  overflow: hidden;
   text-align: center;
   color: var(--text-color);
   border: 2px solid var(--foreground-color);
@@ -45,19 +45,27 @@ html {
   background-color: var(--background-color);
 }
 
-.about .about__img {
-  position: relative;
-  width: 370px;
-  right: 20px;
-  bottom: 20px;
+.about .about__img-container {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
 }
 
-.about .about__header {
+.about .about__img-container__img {
+  width: 500px;
+  object-fit: cover;
+}
+
+.about .about__text-container {
+  padding: 20px 20px;
+}
+
+.about .about__text-container__header {
   font-family: "Viga", sans-serif;
   font-weight: lighter;
 }
 
-.about .about__join-btn {
+.about .about__text-container__join-btn {
   padding: 10px;
   margin-top: 15px;
   width: 270px;
@@ -68,4 +76,34 @@ html {
   border-radius: 5px;
   border-color: var(--foreground-color);
   background-color: var(--foreground-color);
+}
+
+/*Web Page Styling*/
+@media (min-width: 415px) {
+  /*Main Header Styling*/
+  .main-about-header {
+    margin: 20px;
+    font-size: 2rem;
+  }
+
+  /*About Styling*/
+  .about {
+    margin: auto;
+    width: 1000px;
+  }
+
+  .about .about__img-container {
+    float: left;
+    height: 433px;
+  }
+
+  .about .about__text-container__header {
+    font-size: 1.5rem;
+  }
+
+  .about .about__text-container {
+    padding: 20px;
+    overflow: hidden;
+    text-align: left;
+  }
 }
