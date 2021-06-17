@@ -45,14 +45,12 @@ html {
   background-color: var(--background-color);
 }
 
-.about .about__img-container {
-  display: flex;
-  justify-content: center;
-}
-
-.about .about__img-container__img {
-  width: 500px;
-  object-fit: cover;
+.about .about__img {
+  width: 356px;
+  height: 200px;
+  background-image: url("./../images/mintbean-dome.png");
+  background-position: center;
+  background-size: cover;
 }
 
 .about .about__text-container {
@@ -78,7 +76,7 @@ html {
 }
 
 /*Web Page Styling*/
-@media (min-width: 415px) {
+@media (min-width: 400px) {
   /*Main Header Styling*/
   .main-about-header {
     margin: 20px;
@@ -91,13 +89,10 @@ html {
     width: 1000px;
   }
 
-  .about .about__img-container {
+  .about .about__img {
     float: left;
-    height: 433px;
-  }
-
-  .about .about__text-container__header {
-    font-size: 1.5rem;
+    width: 500px;
+    height: 428px;
   }
 
   .about .about__text-container {
