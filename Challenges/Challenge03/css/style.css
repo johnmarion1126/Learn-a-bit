@@ -35,6 +35,13 @@ html {
 }
 
 /*Card*/
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 .card {
   position: relative;
   display: flex;
@@ -42,6 +49,7 @@ html {
   flex-direction: column;
   margin: auto;
   margin-top: 120px;
+  margin-bottom: 20px;
   padding: 0px 20px;
   width: 300px;
   height: 410px;
@@ -88,6 +96,7 @@ html {
 
 .card__bio {
   margin-top: 25px;
+  height: 100px;
   font-family: "Rubik", sans-serif;
 }
 
