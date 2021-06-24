@@ -1,0 +1,104 @@
+/*Colors*/
+:root {
+  --text-color: #ffffff;
+  --background-color: #221727;
+  --foreground-color: #5ef4d6;
+  --default-color: #4143b1;
+  --shadow-color: #000000;
+  --small-color: #24e5a3;
+}
+
+/*Reset browser for styling*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/*General Styling*/
+html {
+  background: var(--default-color);
+  font-family: "Rubik", sans-serif;
+  line-height: 1.6;
+}
+
+/*Main Header*/
+.main-header {
+  padding: 10px;
+  font-family: "Viga", sans-serif;
+  font-weight: lighter;
+  color: var(--foreground-color);
+  text-align: center;
+  text-shadow: 0px 3px 4px var(--shadow-color);
+}
+
+/*Card*/
+.card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 120px;
+  padding: 0px 20px;
+  width: 300px;
+  height: 410px;
+  text-align: center;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  border: 2px solid var(--foreground-color);
+  border-radius: 5px;
+  text-shadow: 0px 3px 4px var(--shadow-color);
+}
+
+.card__img {
+  position: absolute;
+  bottom: 305px;
+  width: 200px;
+  height: 200px;
+  border: 2px solid var(--foreground-color);
+  border-radius: 100%;
+}
+
+.card__img.first {
+  background: url("./../images/pikachu.jpg") no-repeat center / cover;
+}
+
+.card__img.second {
+  background: url("./../images/squirtle.jpg") no-repeat center / cover;
+}
+
+.card__img.third {
+  background: url("./../images/charmander.jpg") no-repeat center / cover;
+}
+
+.card__name {
+  margin-top: 100px;
+  font-family: "Viga", sans-serif;
+  font-size: 2rem;
+  font-weight: lighter;
+  color: var(--foreground-color);
+}
+
+.card__job {
+  color: var(--small-color);
+}
+
+.card__bio {
+  margin-top: 25px;
+  font-family: "Rubik", sans-serif;
+}
+
+.card__socials {
+  margin-top: 40px;
+}
+
+.card__socials__icon {
+  margin: 0px 5px;
+  height: 50px;
+  border: 2px solid var(--foreground-color);
+  border-radius: 100%;
+  padding: 4px;
+}
