@@ -18,7 +18,7 @@
 
 /*General Styling*/
 html {
-  background: var(--default-color) url("./images/mintbean-dome.png");
+  background: var(--default-color) url("./../images/mintbean-dome.png");
   background-size: 1400px;
   font-family: "Rubik", sans-serif;
   line-height: 1.6;
