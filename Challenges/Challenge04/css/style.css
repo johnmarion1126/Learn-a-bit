@@ -17,14 +17,34 @@
   margin: 0;
 }
 
-/*General Styling*/
+/*General*/
 html {
   background: var(--default-color);
   font-family: "Rubik", sans-serif;
   line-height: 1.6;
 }
 
-/*Header Styling*/
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px 20px;
+}
+
 .contact-header {
+  margin-top: 10px;
+  font-family: "Viga", sans-serif;
+  font-weight: lighter;
   text-align: center;
+}
+
+/*Contact Information*/
+.contact-info {
+  border: 1px solid white;
+}
+
+/*Contact Form*/
+.contact-form {
+  border: 1px solid white;
 }
