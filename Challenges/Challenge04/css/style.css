@@ -79,6 +79,7 @@ html {
 .contact-form textarea {
   height: 85px;
   vertical-align: top;
+  font-family: "Rubik";
   text-align: left;
 }
 
@@ -91,4 +92,29 @@ html {
   background-color: var(--foreground-color);
   border-radius: 8px;
   border: 1px solid var(--foreground-color);
+}
+
+@media (min-width: 700px) {
+  /*General*/
+  .contact-header {
+    margin-top: 50px;
+  }
+
+  .contact-container {
+    margin-top: 50px;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  /*Contact Information*/
+  .contact-info {
+    margin-right: 20px;
+    width: 500px;
+  }
+
+  /*Contact Form*/
+  .contact-form {
+    margin-bottom: 25px;
+    width: 500px;
+  }
 }
