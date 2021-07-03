@@ -37,14 +37,58 @@ html {
   font-family: "Viga", sans-serif;
   font-weight: lighter;
   text-align: center;
+  color: var(--foreground-color);
+  text-shadow: 0px 3px 4px var(--shadow-color);
 }
 
 /*Contact Information*/
 .contact-info {
-  border: 1px solid white;
+  margin-bottom: 20px;
+  padding: 20px;
+  text-align: center;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  border: 2.5px solid var(--foreground-color);
+  border-radius: 8px;
+}
+
+.contact-info__text {
+  margin: 15px 0px;
+}
+.contact-info__icons__img {
+  margin: 0px 5px;
+  width: 50px;
+  border: 2.5px solid var(--foreground-color);
+  border-radius: 100%;
 }
 
 /*Contact Form*/
 .contact-form {
-  border: 1px solid white;
+  width: 335px;
+}
+
+.contact-form__input {
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 100%;
+  background-color: var(--background-color);
+  border: 2.5px solid var(--foreground-color);
+  border-radius: 8px;
+}
+
+.contact-form textarea {
+  height: 85px;
+  vertical-align: top;
+  text-align: left;
+}
+
+.contact-form button {
+  width: 100%;
+  height: 45px;
+  font-family: "viga", sans-serif;
+  font-weight: lighter;
+  font-size: 1.5rem;
+  background-color: var(--foreground-color);
+  border-radius: 8px;
+  border: 1px solid var(--foreground-color);
 }
