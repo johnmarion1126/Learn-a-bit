@@ -17,3 +17,9 @@
 <p align="center">
     <img src="./Images/team.PNG">
 </p>
+
+# Contact
+
+<p align="center">
+    <img src="./Images/contact.PNG">
+</p>
