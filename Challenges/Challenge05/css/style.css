@@ -1,0 +1,25 @@
+/*Colors*/
+:root {
+  --text-color: #ffffff;
+  --background-color: #221727;
+  --foreground-color: #5ef4d6;
+  --default-color: #4143b1;
+  --shadow-color: #000000;
+  --small-color: #24e5a3;
+}
+
+/*Reset browser for styling*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/*General*/
+html {
+  background: var(--default-color);
+  font-family: "Rubik", sans-serif;
+  line-height: 1.6;
+}
