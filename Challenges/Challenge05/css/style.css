@@ -84,3 +84,17 @@ html {
 .logos small {
   margin: 10px 0px 5px;
 }
+
+@media (min-width: 750px) {
+  .links-container {
+    margin-top: 10px;
+  }
+  .links-container a {
+    margin: 0px 100px;
+  }
+
+  .logos {
+    position: relative;
+    bottom: 200px;
+  }
+}
