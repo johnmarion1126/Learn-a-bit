@@ -19,7 +19,68 @@
 
 /*General*/
 html {
-  background: var(--default-color);
+  background: var(--background-color);
   font-family: "Rubik", sans-serif;
   line-height: 1.6;
+}
+
+/*Links*/
+.links-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.links-container a {
+  display: flex;
+  align-items: center;
+  margin: 5px;
+  padding: 10px;
+  width: 150px;
+  height: 50px;
+  text-decoration: none;
+  font-family: "Rubik";
+  color: var(--foreground-color);
+}
+
+/*Socials*/
+.socials img {
+  width: 35px;
+  height: 35px;
+}
+
+.socials span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border: 1.5px solid var(--foreground-color);
+  border-radius: 50%;
+}
+
+/*Sections*/
+.sections a {
+  display: block;
+  text-align: right;
+}
+
+/*Logos*/
+.logos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  color: var(--text-color);
+}
+
+.logos img {
+  margin: 5px 0px 10px;
+  width: 325px;
+}
+
+.logos small {
+  margin: 10px 0px 5px;
 }
