@@ -16,7 +16,7 @@
   margin: 0;
 }
 
-/*General Styling*/
+/*General*/
 html {
   background: var(--default-color) url("./../images/mintbean-dome.png");
   background-size: 1400px;
@@ -24,7 +24,7 @@ html {
   line-height: 1.6;
 }
 
-/*Nav Styling*/
+/*Nav*/
 nav {
   background-color: var(--background-color);
   position: absolute;
@@ -58,7 +58,7 @@ nav .hamburger {
   display: none;
 }
 
-/*Header Text Styling*/
+/*Header Text*/
 .header-text {
   background-color: var(--opactiy-header);
   border: 2px solid var(--foreground-color);
@@ -92,7 +92,6 @@ button {
   padding: 10px 20px;
 }
 
-/*Mobile Styling*/
 @media screen and (max-width: 750px) {
   nav {
     padding: 15px 70px;

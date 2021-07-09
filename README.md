@@ -23,3 +23,9 @@
 <p align="center">
     <img src="./Images/contact.PNG">
 </p>
+
+# Footer
+
+<p align="center">
+    <img src="./Images/footer.PNG">
+</p>
