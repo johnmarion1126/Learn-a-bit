@@ -28,7 +28,11 @@ button {
 }
 
 nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding: 15px 20px;
+  width: 100%;
   background-color: $background-color;
 
   .nav-items {
@@ -42,7 +46,7 @@ nav {
       background-color: $foreground-color;
       width: 35px;
       height: 4px;
-      margin: 5px 0px 5px 120px;
+      margin: 5px;
     }
   }
 }
@@ -51,8 +55,10 @@ nav {
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin: 40px 15px;
-  padding: 30px;
+  margin: 40px 30px;
+  padding: 25px 30px 10px 30px;
+  max-width: 500px;
+  min-width: 200px;
   color: $text-color;
   border: 2px solid $foreground-color;
   border-radius: 10px;
@@ -66,7 +72,35 @@ nav {
 
   button {
     font-size: 1.1em;
-    margin: 10px 0px;
+    margin: 20px 0px;
     padding: 10px 20px;
+  }
+}
+
+@media (min-width: 700px) {
+  html {
+    background-position-y: 0px;
+  }
+
+  nav {
+    .hamburger {
+      display: none;
+
+      div {
+        display: none;
+      }
+    }
+
+    .nav-items {
+      display: block;
+      color: $text-color;
+      font-family: $default-color;
+      font-weight: 100;
+
+      a {
+        color: $text-color;
+        text-decoration: none;
+      }
+    }
   }
 }

@@ -26,7 +26,17 @@ button {
 }
 
 nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 15px 20px;
+  width: 100%;
   background-color: #221727;
 }
 
@@ -42,7 +52,7 @@ nav .hamburger div {
   background-color: #5ef4d6;
   width: 35px;
   height: 4px;
-  margin: 5px 0px 5px 120px;
+  margin: 5px;
 }
 
 .header-text {
@@ -54,8 +64,10 @@ nav .hamburger div {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  margin: 40px 15px;
-  padding: 30px;
+  margin: 40px 30px;
+  padding: 25px 30px 10px 30px;
+  max-width: 500px;
+  min-width: 200px;
   color: #ffffff;
   border: 2px solid #5ef4d6;
   border-radius: 10px;
@@ -70,7 +82,29 @@ nav .hamburger div {
 
 .header-text button {
   font-size: 1.1em;
-  margin: 10px 0px;
+  margin: 20px 0px;
   padding: 10px 20px;
+}
+
+@media (min-width: 700px) {
+  html {
+    background-position-y: 0px;
+  }
+  nav .hamburger {
+    display: none;
+  }
+  nav .hamburger div {
+    display: none;
+  }
+  nav .nav-items {
+    display: block;
+    color: #ffffff;
+    font-family: #4143b1;
+    font-weight: 100;
+  }
+  nav .nav-items a {
+    color: #ffffff;
+    text-decoration: none;
+  }
 }
 /*# sourceMappingURL=sass-style.css.map */
