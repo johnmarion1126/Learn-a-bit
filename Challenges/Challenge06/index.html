@@ -4,58 +4,267 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link 
+      href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet"
+    />
+    <link 
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" 
+      rel="stylesheet"
+    />
+    <link 
+      rel="stylesheet" 
+      href="./css/style.css"
+    />
     <title>Mintbean Learn-a-bit Challenge 06 - Landing Page</title>
   </head>
-
-  <body>
-  <!-- Header section -->
-  Intro
-  About
-  Team
-  Contact
-  Join
-
-  Level up bit by bit with Learn-a-bit
-  
-  As the name says, the purpose of
-  Learn-a-bit is about learning one bit
-  of code at a time. In these events,
-  you will build small projects to
-  educate yourself on the fundamentals
-  of web development using HTML, CSS,
-  and JavaScript. These events are
-  relaxed and non-competitive, but are
-  still chalennging enough to push you
-  to use all your resources and
-  knowledge to solve each problem.
-  
-  Join a learn-a-ton
-
-  <!-- About section -->
-  What is it about?
-
-  What is learn-a-bit about?
-
-  Learn-a-bit will teach you the fundamentals through a hands-on approach. You
-  will gain versatility in the basic tools of the trade and learn the best
-  practices for writing semantic HTML and well-designed CSS. You will improve
-  your design skills and start to create attractive and attention-grabbing
-  portfolio pieces while also gaining confidence to tackle any of the harder
-  hackathons. 
-  
-  In the end, the first impression and presentation of products
-  are the main reason for its success and appeal. Our products represent
-  ourselves and our knowledge so we should make it shine in the best light.
-
-  Join a learn-a-bit
-
-  <!-- Team section -->
-
-  <!-- Contact section -->
-  Have a question about a Learn-a-bit or workshop?
-  Want to speak at one of our events or discus a potential collaboration? 
-  Contact us, we'd love to start a conversation.
-  
-  <!-- Footer section -->
-  </body>
+    <body>
+      <!-- Header section -->
+      <header>
+        <nav>
+          <img 
+            src="./images/learnabit-logo.svg" 
+            alt="Learn-a-bit logo"
+          />
+          <ol class="nav-items">
+            <l1><a href="#">Intro</a></l1> |
+            <l1><a href="#">About</a></l1> |
+            <l1><a href="#">Team</a></l1> |
+            <l1><a href="#">Contact</a></l1> |
+            <button>JOIN</button>
+          </ol>
+          <span class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+          </span>
+        </nav>
+        <section class="header-text">
+          <h1>LEVEL UP BIT BY BIT WITH LEARN-A-BIT</h1>
+          <p>
+            As the name says, the purpose of
+            Learn-a-bit is about learning one bit of code at a time. In these events, you will build small projects to educate yourself on the fundamentals of web development using HTML, CSS, and JavaScript. These events are relaxed and non-competitive, but are still challenging enough to push you to use all your resources and knowledge to solve each problem.
+          </p>
+          <button>JOIN A LEARN-A-TON</button>
+        </section>
+      </header>
+      <!-- About section -->
+      <section class="about-section">
+        <h1 class="main-about-header">WHAT IS IT ABOUT?</h1>
+        <article class="about">
+          <div class="about__img"></div>
+          <div class="about__text-container">
+            <h1 class="about__text-container__header">WHAT IS LEARN-A-BIT ABOUT?</h1>
+            <p class="about_text-container__text">
+              Learn-a-bit will teach you the fundamentals through a hands-on approach. You
+              will gain versatility in the basic tools of the trade and learn the best
+              practices for writing semantic HTML and well-designed CSS. You will improve
+              your design skills and start to create attractive and attention-grabbing
+              portfolio pieces while also gaining confidence to tackle any of the harder
+              hackathons. 
+              <br><br>
+              In the end, the first impression and presentation of products
+              are the main reason for its success and appeal. Our products represent
+              ourselves and our knowledge so we should make it shine in the best light.
+            </p>
+            <button class="about__text-container__join-btn">JOIN A LEARN-A-BIT</button>
+          </div>
+        </article>
+      </section>
+      <!-- Team section -->
+      <section class="card-section">
+        <h1 class="main-header">TEAM</h1>
+        <div class="card-container">
+          <!--Person 1-->
+          <section class="card">
+            <div class="card__img first"></div>
+            <h2 class="card__name">Pikachu</h2>
+            <small class="card__job">Mouse</small>
+            <p class="card__bio">Pikachu that can generate powerful electricity have cheek sacs that are extra soft and super stretchy.</p>
+            <div class="card__socials">
+              <img 
+                class="card__socials__icon"
+                src="https://img.icons8.com/android/48/5ef4d6/globe.png"
+              />
+              <img
+                class="card__socials__icon"
+                src="https://img.icons8.com/material-sharp/48/5ef4d6/github.png"
+              />
+              <img
+                class="card__socials__icon"
+                src="https://img.icons8.com/ios-glyphs/60/5ef4d6/linkedin-2.png"
+              />
+              <img
+                class="card__socials__icon"
+                src="https://img.icons8.com/ios/50/5ef4d6/filled-message.png"
+              />
+            </div>
+          </section>
+          <!--Person 2-->
+          <section class="card">
+            <div class="card__img second"></div>
+            <h2 class="card__name">Squirtle</h2>
+            <small class="card__job">Tiny Turtle</small>
+            <p class="card__bio">When it retracts its long neck into its shell, it squirts out water with vigorous force.</p>
+            <div class="card__socials">
+              <img 
+                class="card__socials__icon"
+                src="https://img.icons8.com/android/48/5ef4d6/globe.png"
+              />
+              <img
+                class="card__socials__icon"
+                src="https://img.icons8.com/material-sharp/48/5ef4d6/github.png"
+              />
+              <img
+                class="card__socials__icon"
+                src="https://img.icons8.com/ios-glyphs/60/5ef4d6/linkedin-2.png"
+              />
+              <img
+                class="card__socials__icon"
+                src="https://img.icons8.com/ios/50/5ef4d6/filled-message.png"
+              />
+            </div>
+          </section>
+          <!--Person 3-->
+          <section class="card">
+            <div class="card__img third"></div>
+            <h2 class="card__name">Charmander</h2>
+            <small class="card__job">Lizard</small>
+            <p class="card__bio">It has a preference for hot things. When it rains, steam is said to spout from the tip of its tail.</p>
+            <div class="card__socials">
+              <img 
+                class="card__socials__icon"
+                src="https://img.icons8.com/android/48/5ef4d6/globe.png"
+              />
+              <img
+                class="card__socials__icon"
+                src="https://img.icons8.com/material-sharp/48/5ef4d6/github.png"
+              />
+              <img
+                class="card__socials__icon"
+                src="https://img.icons8.com/ios-glyphs/60/5ef4d6/linkedin-2.png"
+              />
+              <img
+                class="card__socials__icon"
+                src="https://img.icons8.com/ios/50/5ef4d6/filled-message.png"
+              />
+            </div>
+          </section>
+        </div>
+      </section>
+      <!-- Contact section -->
+      <section class="contact-section">
+        <h1 class="contact-header">CONTACT US</h1>
+        <div class="contact-container">
+          <section class="contact-info">
+            <img 
+              class="contact-info__img"
+              src="images/learnabit-logo.svg" 
+              alt="learnabit-logo"
+            />
+            <p class="contact-info__text">
+              Have a question about a Learn-a-bit or workshop? Want to speak at one of our
+              events or discuss a potential collaboration? Contact us, we'd love to start
+              a conversation.
+            </p>
+            <div class="contact-info__icons">
+              <img 
+                class="contact-info__icons__img"
+                src="https://img.icons8.com/android/48/5ef4d6/globe.png"
+              />
+              <img
+                class="contact-info__icons__img"
+                src="https://img.icons8.com/material-sharp/48/5ef4d6/github.png"
+              />
+              <img
+                class="contact-info__icons__img"
+                src="https://img.icons8.com/ios-glyphs/60/5ef4d6/linkedin-2.png"
+              />
+              <img
+                class="contact-info__icons__img"
+                src="https://img.icons8.com/ios/50/5ef4d6/filled-message.png"
+              />
+            </div>
+          </section>
+          <form class="contact-form">
+            <input 
+              class="contact-form__input"
+              type="text" 
+              id="first-name" 
+              name="first-name" 
+              placeholder="Full Name"
+            />
+            <br>
+            <input 
+              class="contact-form__input"
+              type="text" 
+              id="email" 
+              name="email" 
+              placeholder="Email"
+            />
+            <br>
+            <textarea 
+              class="contact-form__input" 
+              placeholder="Message"></textarea>
+            <br>
+            <button type="button">SEND</button>
+          </form>
+        </div>
+      </section>
+      <!-- Footer section -->
+      <footer>
+        <div class="links-container">
+          <div class="socials">
+            <a href="#">
+              <span>
+                <img 
+                class="contact-info__icons__img"
+                src="https://img.icons8.com/android/48/5ef4d6/globe.png"
+                />
+              </span>
+              Website
+            </a>
+            <a href="#">
+              <span>
+                <img
+                class="contact-info__icons__img"
+                src="https://img.icons8.com/material-sharp/48/5ef4d6/github.png"
+                />
+              </span>
+              Github
+            </a>
+            <a href="#">
+              <span>
+                <img
+                class="contact-info__icons__img"
+                src="https://img.icons8.com/ios-glyphs/60/5ef4d6/linkedin-2.png"
+                />
+              </span>
+              LinkedIn
+            </a>
+            <a href="#">
+              <span>
+                <img
+                class="contact-info__icons__img"
+                src="https://img.icons8.com/ios/50/5ef4d6/filled-message.png"
+                />
+              </span>
+              Email
+            </a>
+          </div>
+          <div class="sections">
+            <a href="#">Intro #</a>
+            <a href="#">About #</a>
+            <a href="#">Team #</a>
+            <a href="#">Contact #</a>
+          </div>
+        </div>
+        <section class="logos">
+          <img 
+            src="images/learnabit-logo.svg" alt="learn-a-bit logo"
+          />
+          Powered by: Mintbean
+          <small>Copyright @ 2021 All rights reserved.</small>
+        </section>
+      </footer>
+    </body>
 </html>
