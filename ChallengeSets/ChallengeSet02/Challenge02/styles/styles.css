@@ -1,0 +1,113 @@
+:root {
+    --main-text: #232932;
+    --info-text: #3a3f47;
+    --white: #ffffff;
+    --yellow: #ffd36a;
+    --main-font: 'Poppins';
+    --second-font: 'Open Sans', sans-serif;
+    --shadow: grey;
+    --main__color: "violet";
+    --mobileSize: 150px;
+}
+
+.gallery-header {
+    margin: 10px auto;
+    text-align: center;
+    font-family: var(--main-font);
+    font-weight: bold;
+    font-size: 2.8rem;
+    color: var(--main-text);
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.gallery__img,
+.gallery__img-container{
+    border-radius: 10px;
+    width: var(--mobileSize);
+    height: var(--mobileSize);
+    object-fit: cover;
+    overflow: hidden;
+    transition: all 1s ease-in-out;
+}
+
+/* .gallery__img:focus {
+    position: absolute;
+    z-index: 1;
+    transform: scale(2, 2);
+} */
+
+.trans
+{
+	transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	-webkit-transition: all 1s ease;
+}
+
+.lightbox
+{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.75);
+	z-index: 999;
+	opacity: 0;
+	pointer-events: none;
+}
+.lightbox img
+{
+	max-width: 90%;
+	max-height: 80%;
+	position: relative;
+	top: -100%;
+	/* Transition */
+	transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	-webkit-transition: all 1s ease;
+}
+.lightbox:target
+{
+	outline: none;
+	top: 0;
+	opacity: 1;
+	pointer-events: auto;
+	transition: all 1.2s ease;
+	-moz-transition: all 1.2s ease;
+	-ms-transition: all 1.2s ease;
+	-o-transition: all 1.2s ease;
+	-webkit-transition: all 1.2s ease;
+}
+
+.lightbox:target img
+{
+	top: 0;
+	top: 50%;
+    width: 90%;
+    height: 100%;
+	transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+}
+
+@media screen and (min-width: 800px) {
+    .gallery__img,
+    .gallery__img-container {
+        width: 350px;
+        height: 250px;
+    }
+}

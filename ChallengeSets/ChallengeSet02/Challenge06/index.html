@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" 
+    rel="stylesheet" 
+  />
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" 
+    rel="stylesheet" 
+  />
+  <link 
+    rel="stylesheet" 
+    href="./styles/styles.css" 
+  />
+  <link
+    rel="stylesheet"
+    href="./styles/gallery.css"
+  />
+  <link 
+    rel="stylesheet"
+    href="./styles/price.css"
+  />
+  <link
+    rel="stylesheet"
+    href="./styles/review.css"
+  />
+  <link
+    rel="stylesheet"
+    href="./styles/contact.css"
+  />
+<title>Header</title>
+</head>
+  <div id="heroSection">
+    <div id="heroImgHolder">
+      <img id="heroImg" src="./images/background.jpg"/>
+    </div>
+    <header class="header">
+      <nav class="nav">
+        <h2 class="logo">LOGO</h2>
+        <input type="checkbox" class="hamburger-toggle">
+          <span class="hamburger">&#9776;</span>
+        </input>
+        <ul class="hamburger_menu">
+          <l1 class="nav__item">
+            <a class="nav__link" href="#zzzz">Photos</a>
+          </l1>
+          <l1 class="nav__item">
+            <a class="nav__link" href="#">Pricing</a>
+          </l1>
+          <l1 class="nav__item">
+            <a class="nav__link" href="#">Reviews</a>
+          </l1>
+          <l1 class="nav__item">
+            <a class="nav__link" href="#">Contact</a>
+          </l1>
+          <span class="hamburger__exit">x</span>
+        </ul>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="#">Photos</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Pricing</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Reviews</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <section class="hero">
+        <div class="container">
+          <article class="card">
+            <h1 class="card__title">HEADING</h1>
+            <p class="card__text">
+              Lorem ipsum dolor sit amet, 
+              consectetur adipiscing elit, sed 
+              do eiusmod tempor incididunt 
+              ut labore et dolore magna ali
+            </p>
+            <button class="card__button">Learn More</button>
+          </article>
+        </div>
+      </section>
+    </header>
+  </div>
+  <div class="gallery-section">
+    <h1 class="gallery-header">Photos</h1>
+    <section class="gallery">
+      <a href="#img_1"><div class="gallery__img-container"><img class="gallery__img" tabindex="0" src="images/image1.jpg"/></div></a>
+      <a href="#img_2"><div class="gallery__img-container"><img class="gallery__img" tabindex="0" src="images/image2.jpg"/></div></a>
+      <a href="#img_3"><div class="gallery__img-container"><img class="gallery__img" tabindex="0" src="images/image3.jpg"/></div></a>
+      <a href="#img_4"><div class="gallery__img-container"><img class="gallery__img" tabindex="0" src="images/image4.jpg"/></div></a>
+      <a href="#img_5"><div class="gallery__img-container"><img class="gallery__img" tabindex="0" src="images/image5.jpg"/></div></a>
+      <a href="#img_6"><div class="gallery__img-container"><img class="gallery__img" tabindex="0" src="images/image6.jpg"/></div></a>
+      <a href="#img_7"><div class="gallery__img-container"><img class="gallery__img" tabindex="0" src="images/image7.jpg"/></div></a>
+      <a href="#img_8"><div class="gallery__img-container"><img class="gallery__img" tabindex="0" src="images/image8.jpg"/></div></a>
+      <a href="#img_9"><div class="gallery__img-container"><img class="gallery__img" tabindex="0" src="images/image9.jpg"/></div></a>
+    </section>
+    <a href="#_1" class="lightbox trans" id="img_1"><img class="gallery__img" tabindex="0" src="images/image1.jpg"/></a>
+    <a href="#_2" class="lightbox trans" id="img_2"><img class="gallery__img" tabindex="0" src="images/image2.jpg"/></a>
+    <a href="#_3" class="lightbox trans" id="img_3"><img class="gallery__img" tabindex="0" src="images/image3.jpg"/></a>
+    <a href="#_4" class="lightbox trans" id="img_4"><img class="gallery__img" tabindex="0" src="images/image4.jpg"/></a>
+    <a href="#_5" class="lightbox trans" id="img_5"><img class="gallery__img" tabindex="0" src="images/image5.jpg"/></a>
+    <a href="#_6" class="lightbox trans" id="img_6"><img class="gallery__img" tabindex="0" src="images/image6.jpg"/></a>
+    <a href="#_7" class="lightbox trans" id="img_7"><img class="gallery__img" tabindex="0" src="images/image7.jpg"/></a>
+    <a href="#_8" class="lightbox trans" id="img_8"><img class="gallery__img" tabindex="0" src="images/image8.jpg"/></a>
+    <a href="#_9" class="lightbox trans" id="img_9"><img class="gallery__img" tabindex="0" src="images/image9.jpg"/></a>
+  </div>
+  <div class="price-section">
+    <h1 class="price-header">Pricing</h1>
+    <div class="price-card-container">
+        <card class="price-card hide">
+            <h5 class="price-card__num">1 Photo</h5>
+            <h2 class="price-card__price">$39.99</h2>
+            <small class="price-card__per">per photo</small>
+            <button class="price-card__btn hide">Order Now</button>
+        </card>
+        <card class="price-card">
+            <h5 class="price-card__num">3-5 Photo</h5>
+            <h2 class="price-card__price">$34.99</h2>
+            <small class="price-card__per">per photo</small>
+            <button class="price-card__btn">Order Now</button>
+        </card>
+        <card class="price-card">
+            <h5 class="price-card__num">6-8 Photo</h5>
+            <h2 class="price-card__price">$30.99</h2>
+            <small class="price-card__per">per photo</small>
+            <button class="price-card__btn">Order Now</button>
+        </card>
+    </div>
+  </div>
+  <div class="review-section">
+    <h1 class="review-header">Reviews</h1> 
+    <div class="review-container">
+      <section class="review-card" tabindex="0">
+        <img class="review-card__icon" src="./images/icons.png" alt="user icon" height="70" width="70">
+        <h3 class="review-card__name">
+          Emsad Ahmetašević 
+        </h3>
+        <div class="review-card__rating">
+          <img src="./images/star.png" alt="star" height="30">
+          <img src="./images/star.png" alt="star" height="30">
+          <img src="./images/star.png" alt="star" height="30">
+          <img src="./images/star.png" alt="star" height="30">
+          <img src="./images/star.png" alt="star" height="30">
+        </div>
+        <p class="review-card__text">
+          Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip...
+        </p>
+      </section>
+      <section class="review-card" tabindex="0">
+        <img class="review-card__icon" src="./images/icons.png" alt="user icon" height="70" width="70">
+        <h3 class="review-card__name">
+          Christopher DiPiero 
+        </h3>
+        <div class="review-card__rating">
+          <img src="./images/star.png" alt="star" height="30">
+          <img src="./images/star.png" alt="star" height="30">
+          <img src="./images/star.png" alt="star" height="30">
+          <img src="./images/star.png" alt="star" height="30">
+          <img src="./images/star.png" alt="star" height="30">
+        </div>
+        <p class="review-card__text">
+          Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip...
+        </p>
+      </section>
+      <section class="review-card" tabindex="0">
+        <img class="review-card__icon" src="./images/icons.png" alt="user icon" height="70" width="70">
+        <h3 class="review-card__name">
+          Julio Alcantara 
+        </h3>
+        <div class="review-card__rating">
+          <img src="./images/star.png" alt="star" height="30">
+          <img src="./images/star.png" alt="star" height="30">
+          <img src="./images/star.png" alt="star" height="30">
+          <img src="./images/star.png" alt="star" height="30">
+          <img src="./images/emptystar.png" alt="star" height="30">
+        </div>
+        <p class="review-card__text">
+          Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip...
+        </p>
+      </section>
+      <section class="review-card" tabindex="0">
+        <img class="review-card__icon" src="./images/icons.png" alt="user icon" height="70" width="70">
+        <h3 class="review-card__name">
+          John Sanchez
+        </h3>
+        <div class="review-card__rating">
+          <img src="./images/star.png" alt="star" height="30">
+          <img src="./images/star.png" alt="star" height="30">
+          <img src="./images/star.png" alt="star" height="30">
+          <img src="./images/star.png" alt="star" height="30">
+          <img src="./images/emptystar.png" alt="star" height="30">
+        </div>
+        <p class="review-card__text">
+          Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip...
+        </p>
+      </section>
+    </div>
+  </div>
+  <section class="contact-section">
+    <article class="contact-container">
+      <div class="img-container">
+        <img 
+          class="profile-img" 
+          src="images/profile.jpg" 
+          alt="profile pic"
+        />
+      </div>
+      <article class="contact-info">
+        <h3 class="contact-info__name">
+          Jane Doe
+        </h3>
+        <div class="contact-bio">
+          <div>
+            <div class="socials">
+              <a>
+                <img 
+                  class="social-icon" 
+                  src="images/youtube.png"
+                  width="50"
+                />
+              </a>
+              <a>
+                <img 
+                  class="social-icon" 
+                  src="images/instagram.png"
+                  width="40"
+                />
+              </a>
+              <a>
+                <img 
+                  class="social-icon" 
+                  src="images/facebook.png"
+                  width="40"
+                />
+              </a>
+              <a>
+                <img 
+                  class="social-icon" 
+                  src="images/behance.png"
+                  width="40"
+                />
+              </a>
+            </div>
+            <p>
+              ipsum dolor sit amet consectetur adipiscing elit ut aliquam purus sit amet luctus 
+              venenatis lectus magna fringilla urna porttitor rhoncus dolor veneatis lectus magna 
+            </p>
+          </div>
+        </div>
+      </article>
+    </article>
+    <form class="contact-form">
+      <input 
+        type="text" 
+        placeholder="Name" 
+        name="name" 
+        id="name" 
+      />
+      <input 
+        type="text" 
+        placeholder="Email" 
+        name="email" 
+        id="email" 
+      />
+      <input 
+        type="textarea" 
+        placeholder="Message" 
+        name="message" 
+        id="message" 
+      />
+      <input 
+        type="submit" 
+        placeholder="submit" 
+        name="submit" 
+        id="submit" 
+      />
+    </form>
+  </section>
+  <footer>
+    <h3 class="footer__logo">LOGO</h3>
+    <ul class="footer__links">
+      <li>
+        <a>Photos</a>
+      </li>
+      <li>
+        <a>Pricing</a>
+      </li>
+      <li>
+        <a>Reviews</a>
+      </li>
+      <li>
+        <a>Contact</a>
+      </li>
+    </ul>
+    <div>Copyright @ 2021 All Rights</div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,136 @@
+:root {
+    --main-text: #232932;
+    --info-text: #3a3f47;
+    --white: #ffffff;
+    --yellow: #ffd36a;
+    --main-font: 'Poppins';
+    --second-font: 'Open Sans', sans-serif;
+    --shadow: grey;
+    --border-color: #EEEEEE;
+    --dark-shade: rgba(53, 61, 64, 0.3);
+    --light-shade: rgba(238,238,238, 0.3);
+    --hover-shade: rgba(53, 61, 64, 0.1);
+  }
+  
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.price-header {
+    margin: 10px;
+    font-family: var(--main-font);
+    text-align: center;
+}
+
+.price-card-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 90%;
+    height: 85vh;
+    margin: auto;
+    font-family: var(--second-font);
+}
+
+.price-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 200px;
+    height: 30%;
+    margin: 10px auto;
+    padding: 60px;
+    background-image: linear-gradient(var(--dark-shade) 5%, var(--light-shade));
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    cursor: default;
+    transition: all 0.1s ease;
+}
+
+.price-card:hover {
+    background-image: linear-gradient(var(--hover-shade) 5%, var(--light-shade));
+    border: 2px solid var(--yellow);
+    transform: scale(1.1);
+}
+
+.price-card__num {
+    font-size: 1.1rem;
+    width: 100px;
+}
+
+.price-card__price {
+    font-size: 2.1rem;
+}
+
+.price-card__per {
+    margin-left: 50px;
+    width: 80px;
+}
+
+.price-card__btn {
+    width: 125%;
+    height: 50%;
+    margin-top: 10px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    transition: opacity 0.5s;
+    border: 1px solid var(--yellow);
+    background-color: var(--yellow);
+    display: none;
+}
+
+.price-card__btn:hover {
+    opacity: 0.8;
+    cursor: pointer; 
+}
+
+.price-card:hover .price-card__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 1050px) {
+    .price-header {
+        margin: 50px;
+        font-size: 2rem;
+    }
+
+    .price-card-container {
+        align-items: flex-start;
+        flex-direction: row;
+    }
+
+    .price-card {
+        width: 300px;
+        height: 60%;
+        padding: 60px 60px 0 60px;
+    }
+
+    .price-card__num {
+        font-size: 1.5rem;
+        width: 200px;
+    }
+
+    .price-card__price {
+        font-size: 2.5rem;
+    }
+
+    .price-card__per {
+        font-size: 1.2rem;
+        width: 100px;
+    }
+
+    .price-card__btn {
+        height: 15%;
+        font-size: 1.2rem;
+        margin-top: 50px;
+    }
+}
